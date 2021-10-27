@@ -1,0 +1,206 @@
+
+body {
+    margin: 0%;
+}
+                /** HEADER **/
+.header {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+                /** HEADER > NAV **/
+.nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.logo {
+    width: 50%;
+}
+.icon {
+    margin: 2%;
+    height: 2%;
+}
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 3;
+    color: #808080;
+    font-family: 'Roboto', sans-serif;
+}
+.rrss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #808080;
+    margin: 2%;
+    flex-grow: 1;
+}
+.twitter {
+    margin-left: 6%;
+}
+/* ENLLAÇOS HEADER */
+.menu a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #808080;
+}
+.menu a:hover {
+    font-size: 3em;
+}
+                /** HEADER > BOX 2 **/
+.header_box2 {
+    background-color: rgba(0, 0, 0, 0.075);
+    margin: 0% 7% 0% 7%;
+}
+.header_box2_text {
+    text-align: center;
+    font-size: 2em;
+    color: #f3a383b4;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+                /** MAIN **/
+.main {
+    display: flex;
+}
+                /** MAIN > ARTICLE **/
+.article {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    width: 66%;
+ }
+.fila1 {
+    background-color: #D8D7D7;
+    display: flex;
+    justify-content: center;
+}
+.fila1_element {
+    background-color: #F5F1F1;
+    margin: 1%;
+    width: 50%;
+    flex-grow: 1;
+}
+.fila2 {
+    background-color: #D8D7D7;
+    display: flex;
+    justify-content: center;
+}
+.fila2_element {
+    background-color: #F5F1F1;
+    margin: 1%;
+    width: 50%;
+    flex-grow: 1;
+}
+.fila3 {
+    background-color: #D8D7D7;
+    display: flex;
+    justify-content: center;
+}
+                /** IMAGENES DEL ARTICLE**/
+.article_img {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 300px;
+    margin: 1%;
+}
+.fecha{
+    position: absolute;
+    color: #e7d48dd5;
+    font-weight: bold;
+    font-size: 1.2em;
+    bottom: 0px;
+}
+.pie_imagen {
+    background-color: #F08080;
+    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    margin: 1%;
+}
+.dos_column {
+    column-count: 2;
+    column-gap: 5%;
+    margin: 2% 1% 1% 1%;
+}
+            /** ULTIMA FILA DEL ARTICLE**/
+.fila3_element {
+    text-align: center;
+    margin: 0 2% 2% 2%;
+    height: 2%;
+    flex-grow: 1;
+}
+                /** MAIN > ASIDE **/
+.aside {
+    background-color: #D8D7D7;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0.5%;
+    width: 33%;
+}
+.aside_element {
+    font-size: 2em;
+    margin: 2%;
+}
+                /** FOOTER **/
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #D8D7D7;
+    margin-top: 2%;
+}
+.footer_element {
+    background-color: #F5F1F1;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #808080;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin: 0% 0.5% 0% 0.5%;
+}
+                /** MEDIA QUERI**/
+                /** TABLETS 768px **/
+                /**  MAIN **/
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    .article {
+        width: 100%;
+    }
+    .fila1_element, .fila2_element {
+        width: 100%;
+    }
+    .aside {
+        margin-top: 1%;
+        width: 100%;
+    }
+}
+                /** TELEFONOS 576px **/               
+@media (max-width: 576px) {
+                /**  HEADER **/
+    .nav {
+        flex-direction: column;
+    }                
+                /**  MAIN **/
+    .fila1 {
+        flex-direction: column;
+    }
+    .fila1_element2 {
+        margin-top: 0%;
+    }
+    .fila2 {
+        flex-direction: column; 
+    }
+}
